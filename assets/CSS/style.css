@@ -1,0 +1,840 @@
+
+/*common section CSS begins */
+:root {
+    --arimo : 'Arimo', sans-serif;
+    --lato : 'Lato', sans-serif;
+    --montserrat : 'Montserrat', sans-serif;
+    --white : #fff;
+    --black : #000;
+    --highlight : #ff508e;
+    --head_black : #111135;
+    --p-black : #565656;
+    --black : #000000;
+}
+body {
+    font-family: var(--montserrat);
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p,a,ol,ul {
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,a {
+    color: var(--head_black);
+}
+a, a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+h1,h2,h3 {
+    font-weight: 600;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+h6,a,p {
+    font-size: 16px;
+}
+h5,h6 {
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline-block;
+}
+.heading h5{
+    position: relative;
+}
+.heading h5::before, #send_message h3::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: auto;
+    height: 3px;
+    width: 98px;
+} 
+.heading h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/*common section CSS ends */
+
+/*nav section CSS begins */
+#main_nav {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    width: 100%;
+}
+#main_nav ul li a{
+    color: var(--white);
+    font-family: var(--lato);
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+}
+#main_nav ul li a:hover, .sticky_nav#main_nav ul li a:hover {
+    color: var(--highlight);
+}
+#main_nav ul li a {
+    padding: 35px 16px;
+}
+.sticky_nav {
+    background-color: #fff;
+}
+.sticky_nav#main_nav ul li a {
+    color: #000;
+}
+/*nav section CSS ends */
+
+/*banner section CSS begins */
+#banner {
+    background-image: url('../img/slider01.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 805px;
+    position: relative;
+    z-index: 1;
+}
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+#banner .banner_text {
+    color: #fff;
+    padding-top: 40px;
+}
+#banner .banner_text span {
+    font-size: 18px;
+    color: var(--highlight);
+}
+#banner .banner_text h1 {
+    padding: 38px 0px 37px;
+    line-height: 1;
+}
+#banner .banner_text h1, #banner .banner_text h5 {
+    color: #fff;
+}
+#banner .banner_text p {
+    padding: 0px 80px 45px;
+    font-size: 18px;
+    font-family: var(--lato);
+}
+#banner a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    padding: 16px 26px;
+    border: 1px solid #fff;
+    border-radius: 48px;
+    transition: all ease-in-out 0.4s;
+}
+#banner a:hover {
+    background-color: var(--highlight);
+    border: 1px solid #ff508e;
+}
+/*banner section CSS ends */
+
+/* about section CSS begins */
+#about {
+    margin: 120px 0px;
+}
+#about .about_image img {
+    width: 100%;
+    border-radius: 10px;
+}
+#about .about_image-bg{
+    padding:20px;
+    box-shadow: 0px 3px 60px 0px #f3f3f3;
+}
+#about .heading h5::before {
+    background-color: #f3f3f3;
+    left: 0;
+}
+#about .heading h2 {
+    font-weight: 600;
+}
+#about .about_content {
+    padding: 40px 0px;
+}
+#about .about_content h2 {
+    padding: 32px 0px 27px;
+}
+#about .about_content h2 span {
+    color: var(--highlight);
+}
+#about .about_content h5.photo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 36px;
+}
+#about .about_content p.text_break {
+    padding: 21px 0px 50px;
+}
+#about p {
+    font-family: 'lato',sans-serif;
+    color: var(--p-black);
+}
+#about .about_btn a, a.primary_btn {
+    background-color: #fff;
+    border-radius: 48px;
+    box-shadow: 0px 3px 20px 0px #f3f3f3;
+    padding: 20px 25px;
+    color: #050505;
+    font-weight: 500;
+    transition: all linear 0.3s;
+}
+#about .about_btn a.print_btn {
+    background-color: transparent;
+    box-shadow: none;
+}
+#about .about_btn a.download_btn:hover, a.primary_btn:hover, #pricing .price_btn a:hover {
+    background-color: var(--highlight);
+    color: #fff;
+}
+#about .about_btn a.print_btn:hover {
+    color: var(--p-black)
+}
+/* about section CSS ends */
+
+/* service section CSS begins */
+#service img {
+    display: inline-block;
+}
+#service {
+    background-color: #f3f3f3;
+}
+#service .service_wrapper {
+    padding: 115px 0px;
+}
+#service h2 {
+    padding: 40px 0px 65px;
+}
+#service .heading h5::before {
+    background-color: #fff;
+    width: 125px;
+}
+#service .service_item {
+    background-color: var(--white);
+    box-shadow: 0px 5px 20px 0px #ececec;
+    padding: 40px 38px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+#service .service_icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px 0px #f2f2f2;
+    margin-bottom: 32px;
+}
+#service h3 {
+    font-weight: 700;
+    padding-bottom: 28px;
+    position: relative;
+}
+#service h3::before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    background-color: #000;
+    height: 2px;
+    width: 50px;
+}
+#service ul {
+    margin: 34px 0px 24px;
+}
+#service ul li {
+    text-transform: capitalize;
+    padding: 0px 10px;
+}
+#service ul li a {
+    color: var(--p-black);
+}
+#service p {
+    font-family: var(--arimo);
+    color: var(--p-black);
+    line-height: 30px;
+    padding: 0px 20px;
+}
+/* service section CSS ends */
+
+/* skill section CSS begins */
+#skill  {
+    background-image: url('../img/video.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 492px;
+    background-attachment: fixed;
+}
+#skill .heading h5 {
+    color: var(--highlight);
+    font-weight: 400;
+}
+#skill .heading h5::before {
+    background-color: var(--white);
+    width: 130px;
+    height: 5px;
+    bottom: -5px;
+}
+#skill h3 {
+    color: #fff;
+    padding: 42px 0px 31px;
+    font-weight: 700;
+}
+#skill p {
+    color: #fff;
+    line-height: 30px;
+    font-family: var(--arimo);
+}
+#skill .play a {
+    border: 1px solid #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 90px;
+    color: #fff;
+    font-size: 23px;
+}
+
+#skill .skill_percentage, #skill h6 {
+    color: #fff;
+    font-weight: 400;
+}
+#skill span,#skill h6 {
+    display: inline-block;
+}
+#skill .skill_bar_bg {
+    background-color: #565656;
+    height: 5px;
+}
+#skill .skill_bar {
+    background-color: #fff;
+}
+#skill .skill_percentage {
+    margin-bottom: 42px;
+}
+#skill .skill_title {
+    margin-bottom: 20px;
+}
+#skill span {
+    float: right;
+}
+#skill h6 {
+    position: relative;
+}
+#skill h6::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+/* skill section CSS ends */
+
+/* achievements section CSS begins */
+#achievements {
+    background-color: #f6f6f6;
+}
+#achievements h6 {
+    font-weight: 400;
+}
+#achievements .achieve_content {
+    padding: 123px 0px;
+}
+#achievements .count span {
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+    bottom: 15px;
+}
+#achievements .count i {
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+}
+/* achievements section CSS ends */
+
+/* gallery section CSS begins */
+#gallery, #pricing, #contact {
+    padding: 120px 0px;
+}
+#gallery .heading h5, #contact .heading h5{
+    color: var(--highlight);
+}
+#gallery .heading h5::before, #contact .heading h5::before{
+    background-color: #f3f3f3;
+    height:4px;
+    width: 85px;
+}
+#gallery .heading h2 {
+    padding: 43px 0px 15px;
+}
+#gallery ul li a {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#gallery ul li {
+    padding: 50px 7px;
+}
+#gallery ul li a:hover {
+    color: #111135;
+}
+#gallery img {
+    width: 100%;
+}
+#gallery .gallery_item {
+    padding: 0px 5px 25px 3px;
+    position: relative;
+}
+#gallery .gallery_content {
+    padding: 0px 17px;
+}
+#gallery .gallery_overlay {
+    position: absolute;
+    left: 35px; 
+    transform: translate(0,-270px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px 21px 0px 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.5s; 
+}
+#gallery .gallery_overlay h5 {
+    font-weight: 700;
+    padding: 20px 0px 10px 0px;
+}
+#gallery .gallery_overlay span {
+    display: inline-block;
+    color: var(--highlight);
+    padding-bottom: 20px;
+}
+#gallery .gallery_overlay a {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    line-height: 44px;
+    color: var(--highlight);
+    background-color: var(--white);
+    box-shadow: 0px 5px 20px 0px #f3f3f3;
+    left: 90%;
+    top: 30px;
+}
+#gallery .gallery_item:hover .gallery_overlay {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,-140px);
+} 
+a.primary_btn {
+    display: inline-block;
+    padding: 20px;
+    margin: 70px 0px 0px;
+}
+/* gallery section CSS ends */
+
+/* client section CSS begins */
+#client, #blog  {
+    padding: 119px 0px;
+    background-color: #f3f3f3;
+}
+#client .heading h5, #blog .heading h5 {
+    color: var(--highlight);
+}
+#client .heading h5::before, #blog .heading h5::before {
+    background-color: #fff;
+    width: 65px;
+}
+#client .heading h2, #blog .heading h2 {
+    padding: 40px 0px 60px;
+}
+#client .client_text p {
+    color: var(--p-black);
+    padding: 0px 275px;
+    font-family: var(--arimo);
+    line-height: 1.9;
+}
+#client .client_thum {
+    margin-top: 18px;
+}
+#client .about_client h4 {
+    line-height: 1.5;
+    font-weight: 600;
+}
+#client .about_client p {
+    font-family: var(--lato);
+    color: var(--p-black);
+}
+#client {
+    position: relative;
+}
+#client .client_icon {
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+#client .client_icon_right {
+    left: auto;
+    right: 50px;
+}
+.client_icon:hover {
+    background-color: var(--highlight);
+    color: #fff;
+}
+/* client section CSS ends */
+
+/* pricing section CSS begins */
+#pricing h5::before {
+    background-color: #f3f3f3;
+    width: 145px;
+    height: 4px;
+}
+#pricing h2 {
+    padding: 40px 0px 96px;
+}
+#pricing ul li {
+    display: block;
+}
+#pricing .price_item h3{
+    font-weight: 700;
+    z-index: 3;
+}
+#pricing .price_item {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px #ececec;
+    z-index: 2;
+    padding-bottom: 40px;
+}
+#pricing .price_item .price_icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0px 5px 20px 0px #f3f3f3;
+    line-height: 99px;
+    z-index: 2;
+}
+#pricing .price_item .price_list {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#pricing .price_item .price_list::before {
+    content:'';
+    position: absolute;
+    top: -150px;
+    left: 0;
+    height: 290px;
+    width: 100%;
+    border-radius: 40%;
+    background-color: #f3f3f3;
+    z-index: -1;
+}
+#pricing .price_head {
+    margin: 80px 0px 50px;
+    z-index: 3;
+}
+#pricing ul {
+    padding-top: 12px;
+}
+#pricing ul li {
+    font-size: 17px;
+    color: var(--p-black);
+    margin-bottom: 17px;
+    font-family: var(--lato);
+}
+#pricing ul li i {
+    color: var(--black);
+    padding-right: 10px;
+}
+#pricing .price_btn a{
+    background-color: #f3f3f3;
+    padding: 17px 40px;
+    border-radius: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all linear 0.3s;
+}
+#pricing .price_btn a.price_btn_sp {
+    background-color: var(--highlight);
+    color: #Fff;
+}
+/* pricing section CSS ends */
+
+/* blog section CSS begins */
+#blog .heading h5::before {
+    width: 140px;
+}
+#blog img {
+    width: 100%;
+}
+#blog .blog_inner {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px #f3f3f3;
+    margin-right: 25px;
+}
+#blog .blog_m_special {
+    margin-right: none;
+}
+#blog .blog_title h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.7;
+}
+#blog .blog_title {
+    padding: 20px 20px 19px;
+}
+#blog .blog_text p {
+    font-family: var(--arimo);
+    color: var(--p-black);
+    line-height: 1.8;
+    padding: 0px 20px 9px;
+}
+#blog .blog_item {
+    position: relative;
+}
+#blog .blog_date {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#blog .blog_date p {
+    font-size: 16px;
+    font-family: var(--arimo);
+    color: var(--p-black);
+    padding: 8px 6px;
+}
+#blog {
+    position: relative;
+}
+#blog .blog_icon {
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px #f3f3f3;
+    position: absolute;
+    bottom: -80px;
+    left: 52%;
+    transform: translate(-50%,0);
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+#blog .blog_icon_left {
+    left: calc(52% - 65px);
+}
+#blog .blog_icon:hover {
+    background-color: #ff508e;
+    color: #fff;
+}
+/* blog section CSS ends */
+
+/* contact section CSS begins */
+#contact .heading h5::before {
+    width: 90px;
+}
+#contact .heading h2 {
+    padding: 45px 0px 68px;
+}
+#contact .contact_item i {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px #f3f3f3;
+    color: #000;
+    line-height: 44px;
+}
+#contact .contact_item span {
+    display: block;
+    font-family: var(--arimo);
+    color: var(--p-black);
+    line-height: 1.8;
+}
+#contact .contact_item h3 {
+    font-weight: 700;
+    padding: 23px 0px 20px;
+}
+/* contact section CSS ends */
+
+/* send_message section CSS begins */
+#send_message h3 {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+#send_message .message_ttl {
+    margin: 0px 0px 78px;
+}
+#send_message h3::before {
+    background-color: #f3f3f3;
+    width: 400px;
+    height: 1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -10px;
+}
+#send_message input.input_field, #send_message textarea.text_field  {
+    font-size: 14px;
+    color: var(--head_black);
+    background-color: #fafafa;
+    border-radius: 30px;
+    border: 1px solid var(--clr-bg);
+    height: 60px;
+    line-height: 1;
+    font-family: var(--arimo);
+    padding: 20px 30px;
+    margin-bottom: 34px;
+}
+#send_message textarea.text_field {
+    height: 150px;
+    resize: none;
+}
+#send_message input.input_field:focus, #send_message textarea.text_field:focus  {
+    box-shadow: none;
+    outline: none;
+}
+#send_message a.primary_btn {
+    margin:  12px 0px 0px;
+    padding: 15px 25px;
+}
+/* send_message section CSS ends */
+
+/* brands section CSS begins */
+#brands {
+    margin: 150px 120px;
+}
+#brands img {
+    display: block;
+}
+ /* {
+    margin-right: 50px;
+} */
+#brands .brand_item:nth-child(5) {
+    margin-right: none;
+}
+/* brands section CSS ends */
+
+/* footer section CSS begins */
+#footer {
+    background-color: #000;
+    padding: 77px 0px;
+}
+#footer .footer_copyright, #footer .footer_menu li a {
+    text-transform: uppercase;
+    color: #e8e8e8;
+    font-family: var(--lato);
+}
+#footer .footer_menu li a {
+    display: inline-block;
+    padding: 0px 20px;
+}
+#footer .footer_social a {
+    float: right;
+    color: #e8e8e8;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all ease-in-out 0.6s;
+}
+#footer .footer_social a:nth-child(5){
+    margin-right: none;
+}
+#footer .footer_social a:hover {
+    border: 1px solid #ff508e;
+    background-color: var(--highlight);
+}
+/* footer section CSS ends */
+
+/*preloader section CSS begins */
+#preloader {
+    position: fixed;
+    z-index: 9999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+/*preloader section CSS ends */
+
+/*back to top */
+#back_to_top {
+    background-color: var(--highlight);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px; 
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    border-radius: 5px;
+}
+#back_to_top:hover {
+    background-color: #111135;
+}
+/*js required 
+preloader
+sticky menu
+*/

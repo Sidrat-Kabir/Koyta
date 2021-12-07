@@ -1,0 +1,247 @@
+/* Desktop (large device) responsive starts */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    #main_nav ul li a {
+        padding: 20px 16px;
+    }
+    #banner {
+        height: 650px;
+    }
+    #banner .banner_text h1 {
+        padding: 30px 0px 35px;
+        font-size: 58px;
+    }
+    #banner .banner_text p {
+        padding: 0px 60px 45px;
+        font-size: 17px;
+    }
+    #banner a {
+        padding: 16px 17px;
+        font-size: 14px;
+    }
+    #about .about_content h2 {
+        font-size: 35px;
+    }
+    #about .about_content h5.photo {
+        padding-bottom: 25px;
+    }
+    #service .service_item {
+        padding: 20px 20px;
+    }
+    #service h3 {
+        padding-bottom: 22px;
+    }
+    #service .service_icon {
+        margin-bottom: 25px;
+    }
+    #service ul {
+        margin: 21px 0px 11px;
+    }
+    #gallery .gallery_overlay {
+        padding: 0px 14px 0px 18px;
+    }
+    #client .client_text p {
+        padding: 0px 207px;
+    }
+    #pricing .price_item {
+        padding-bottom: 34px;
+    }
+    #pricing ul li {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* for medium devices */
+@media (min-width: 768px) and (max-width: 991.99999px) {
+    #banner {
+        height: 550px;
+    }
+    #banner .banner_text h1 {
+        padding: 25px 0px 27px;
+        font-size: 29px;
+    }
+    #banner .banner_text p {
+        padding: 0px 27px 32px;
+        font-size: 17px;
+    }
+    #banner a {
+        font-size: 14px;
+        padding: 13px 11px;
+    }
+    #service .service_wrapper {
+        padding: 40px 0px;
+    }
+    #gallery, #pricing, #contact {
+        padding: 50px 0px;
+    }
+    #gallery .heading h2 {
+        padding: 23px 0px 0px;
+    }
+    #gallery ul li {
+        padding: 41px 7px;
+    }
+    #gallery ul li a {
+        font-size: 15px;
+    }
+    #client .client_text p {
+        padding: 0px 137px;
+    }
+}
+
+/* small device */
+
+@media (min-width: 200px) and (max-width: 767.98px) {
+    #banner {
+        height: 470px;
+    }
+    #banner .banner_text h1 {
+        padding: 15px 0px 22px;
+        font-size: 20px;
+    }
+    #banner .banner_text p {
+        padding: 0px 27px 32px;
+        font-size: 15px;
+    }
+    #banner a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    #service h3 {
+        padding-bottom: 20px;
+        font-size: 21px;
+    }
+    #skill {
+        height: auto;
+    }
+    #skill .skill_content {
+        padding: 30px;
+    }
+    #gallery, #pricing, #contact {
+        padding: 50px 0px;
+    }
+    #gallery .heading h2 {
+        padding: 19px 0px 22px;
+        font-size: 30px;
+    }
+    #gallery ul li {
+        padding: 8px;
+    }
+    #gallery ul li a {
+        font-size: 14px;
+    }
+    #gallery .gallery_content {
+        padding: 25px 17px;
+    }
+    #client .client_text p {
+        padding: 0px 89px;
+    }
+    #contact .contact_item h3 {
+        font-size: 20px;
+    }
+    #contact .contact_item {
+        padding-bottom: 37px;
+    }
+    #footer .footer_copyright, #footer .footer_menu, #footer .footer_social {
+        padding: 20px 0px;
+    }
+}
+
+
+/*common */
+@media (max-width: 991px) {
+    #main_nav button i {
+        color: #ff508e
+    }
+    #main_nav {
+        background-color: #fff;
+    }
+    #main_nav ul li a {
+        padding: 9px 16px;
+        font-size: 14px;
+        color: #000;
+    }
+    #about .about_content h2 {
+        font-size: 25px;
+        padding: 15px 0px 16px;
+    }
+    #about .about_content h5 {
+        font-size: 15px; 
+    }
+    #about .about_content h5.photo {
+        padding-bottom: 17px;
+    }
+    #about p {
+        font-size: 14px;
+    }
+    #about .about_content {
+        padding: 12px 0px;
+    }
+    #about .about_content p.text_break {
+        padding: 15px 0px 30px;
+    }
+    #about .about_btn a, a.primary_btn {
+        padding: 15px 11px;
+        font-size: 13px
+    }
+    #about {
+        margin: 60px 0px;
+    }
+    #service h2 {
+        padding: 32px 0px 37px;
+        font-size: 24px;
+    }
+    #service .service_item {
+        padding: 32px 27px;
+    }
+    #service h3 {
+        padding-bottom: 20px;
+    }
+    #service ul {
+        margin: 17px 0px;
+    }
+    #service .service_wrapper {
+        padding: 40px 0px;
+    }
+    #skill .play a {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    #achievements .achieve_item {
+        padding-bottom: 30px 
+    }
+    #achievements .achieve_content {
+        padding: 57px 0px;
+    }
+    #gallery a.primary_btn {
+        padding: 15px;
+    }
+    a.primary_btn {
+        margin: 22px 0px 0px;
+    }
+    #client .heading h2, #blog .heading h2 {
+        padding: 24px 0px 22px;
+        font-size: 30px;
+    }
+    #client {
+        padding: 55px 0px;
+    }
+    #pricing h2 {
+        padding: 33px 0px 80px;
+    }
+    #pricing h2 {
+        font-size: 30px;
+    }
+    #pricing .price_item {
+        margin-bottom: 100px;
+    }
+    #pricing .price_item_special {
+        margin-bottom: none;
+    }
+    #pricing {
+        padding: 55px 0px 0px;
+    }
+    #blog {
+        padding: 70px 0px 135px;
+    }
+}
